@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="body">
+        <div class="output">
+            <div id="inputscrn"></div>
+            <div id="result">0</div>
+        </div>
+        <div class="input">
+            <section class="1">
+                <div class="buttons" id="ac" onclick="ac()">AC</div>
+                <div class="buttons" id="percent" onclick="rep('*'+'0.01')">%</div>
+                <div class="buttons" id="divide" onclick="rep(this.innerHTML)">/</div>
+                <div class="buttons" id="del" onclick="del()">DEl</div>
+            </section>
+            <section class="2">
+                <div class="buttons" id="7" onclick="rep(this.innerHTML)">7</div>
+                <div class="buttons" id="8" onclick="rep(this.innerHTML)">8</div>
+                <div class="buttons" id="9" onclick="rep(this.innerHTML)">9</div>
+                <div class="buttons" id="plus" onclick="rep(this.innerHTML)">+</div>
+            </section>
+            <section class="3">
+                <div class="buttons" id="4" onclick="rep(this.innerHTML)">4</div>
+                <div class="buttons" id="5" onclick="rep(this.innerHTML)">5</div>
+                <div class="buttons" id="6" onclick="rep(this.innerHTML)">6</div>
+                <div class="buttons" id="x" onclick="rep('*')">x</div>
+            </section>
+            <section class="4">
+                <div class="buttons" id="1" onclick="rep(this.innerHTML)">1</div>
+                <div class="buttons" id="2" onclick="rep(this.innerHTML)">2</div>
+                <div class="buttons" id="3" onclick="rep(this.innerHTML)">3</div>
+                <div class="buttons" id="minus" onclick="rep(this.innerHTML)">-</div>
+            </section>
+            <section class="5">
+                <div class="buttons" id="point" onclick="rep(this.innerHTML)">.</div>
+                <div class="buttons" id="0" onclick="rep(this.innerHTML)">0</div>
+                <div class="buttons" id="equal" onclick="ans()">=</div>
+                <div class="buttons" id="double" onclick="rep(this.innerHTML)">00</div>
+            </section>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
